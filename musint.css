@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    transition: all 0.15s;
+   
+}
+body{
+    background-color: #2B2A2A;
+    background-image: url(image2.png);
+    background-repeat: no-repeat;
+}
+/*estrutura de cimaa*/
+ 
+.header-cima{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color:#2B2A2A;
+}
+.logo{
+    width: 5vw;
+    height: 5vw;
+    padding: 0px;
+}
+.search-box{
+    border: none;
+}
+.text-box{
+    width: 400px;
+    height: 50px;
+}
+
+.icone-header1{
+    width: 80px;
+    height: 80px;
+}
+
+/*estrutura de baixoo*/
+
+.header-baixo{
+    background-color: #00BD71;
+    color:#2B2A2A;
+    font-family: 'Jost', sans-serif;
+    font-size: 1vw;
+    gap: 1vw;
+    padding: 15px 30px;
+}
+.navegation {
+    gap: 2rem;
+    list-style: none;
+    display: inline-flex;
+}
+
+li, a{
+    margin-left: 30%;
+}
+.lema{
+    font-family: 'Jost', sans-serif;
+    color: #00BD71;
+    padding: 170px 170px 0px;
+    font-size: 24px;
+}
+
+
+
+/*MAIN E PRODUTOS*/
+
+.principal{
+    background-color: white;
+    width: 80%;
+    justify-content: center;
+    border-radius: 50px;
+    margin-left: 20rem;
+}
+
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    padding: 10px;
+}
+
+.produto{
+    background-color:white;
+    border-radius: 50px;
+    width: 20%;
+    height: 50%;
+    border-color:1px #2B2A2A;
+}
+
+.produto img{
+    width: 7vw;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+ p{
+    color:black;
+    font-family: 'Jost', sans-serif;
+    font-size: 1vw;
+    padding: 85px 30px;
+}
+img {
+    width: 5vw;
+    padding:20px;
+    justify-content: center;
+}
+.preço{
+    color: #00BD71;
+    font-family: 'Jost' ;
+    font-size: 1vw;
+    padding: 0px 30px 20px;
+}

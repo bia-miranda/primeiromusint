@@ -9,31 +9,41 @@
 }
 body{
     background-color: #2B2A2A;
-    background-image: url(image2.png);
-    background-repeat: no-repeat;
+    background-image: url(male-musician-playing-acoustic-guitar-in-a-dark-room-copy-space.jpg);
+    border-radius: 30px;
 }
 /*estrutura de cimaa*/
  
 .header-cima{
-
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0px;
     background-color:#2B2A2A;
 }
 .logo{
-    width: 5vw;
-    height: 5vw;
-    padding: 0px;
+    width: 200px;
+    height: 150px;
+    margin-right: 1%;
+    padding: 0;
 }
 .search-box{
+    background: #F5F5F5;
+    width: 15vw;
+    height: 2vw;
+    border-radius: 15px;
+}
+.search-text{
+    background: none;
     border: none;
+    float: left;
+    color:#00BD71;
+    width: 15vw;
+    height: 2vw;
+    border-radius: 15px;
+    font-size: 20px;
 }
-.text-box{
-    width: 400px;
-    height: 50px;
-}
+
 
 .icone-header1{
     width: 80px;
@@ -82,7 +92,7 @@ li, a{
 .produtos{
     display: flex;
     justify-content: center;
-    margin-top: 400px;
+    margin-top: 300px;
     padding: 10px;
 }
 

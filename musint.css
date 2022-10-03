@@ -1,37 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 *{
-    box-sizing: border-box;
+  
     margin:0;
     padding: 0;
     transition: all 0.15s;
-   
 }
 body{
     background-color: #2B2A2A;
     background-image: url(male-musician-playing-acoustic-guitar-in-a-dark-room-copy-space.jpg);
     border-radius: 30px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-/*estrutura de cimaa*/
- 
 .header-cima{
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0vw;
     background-color:#2B2A2A;
+    width: 100%;
 }
 .logo{
-    width: 200px;
-    height: 150px;
+    width: 5vw;
+    height: 4vw;
     margin-right: 1%;
     padding: 0;
 }
 .search-box{
     background: #F5F5F5;
     width: 15vw;
-    height: 2vw;
-    border-radius: 15px;
+    height: 1.7vw;
+    border-radius: 1vw;
 }
 .search-text{
     background: none;
@@ -39,29 +42,33 @@ body{
     float: left;
     color:#00BD71;
     width: 15vw;
-    height: 2vw;
-    border-radius: 15px;
-    font-size: 20px;
+    height: 1.7vw;
+    border-radius: 1vw;
+    font-size: 1vw;
 }
 
 
 .icone-header1{
-    width: 80px;
-    height: 80px;
+    width: 1.5vw;
+    height: 1.5vw;
+    padding: 0 0.5vw;
 }
 
 /*estrutura de baixoo*/
 
 .header-baixo{
+    position: fixed;
     background-color: #00BD71;
     color:#2B2A2A;
     font-family: 'Jost', sans-serif;
     font-size: 1vw;
     gap: 1vw;
     padding: 15px 30px;
+    width: 100%;
+    margin-top: 4vw;
 }
 .navegation {
-    gap: 2rem;
+    gap: 2vw;
     list-style: none;
     display: inline-flex;
 }
@@ -72,7 +79,7 @@ li, a{
 .lema{
     font-family: 'Jost', sans-serif;
     color: #00BD71;
-    padding: 170px 170px 0px;
+    padding: 290px 170px 0px;
     font-size: 24px;
 }
 
@@ -88,11 +95,27 @@ li, a{
     margin-left: 20rem;
 }
 
+.titulozinho{
+    margin-top: 300px;
+    color: #00BD71;
+    font-family: 'Jost', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    padding: 20px 0px 0px;
+}
+hr{
+    width: 80%;
+    height: 3px;
+    border: none;
+    border-radius: 90%;
+    background-color:#00BD71;
+    margin-left: 5.7vw;
+}
 
 .produtos{
     display: flex;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 70px;
     padding: 10px;
 }
 
@@ -100,7 +123,6 @@ li, a{
     background-color:white;
     border-radius: 50px;
     width: 20%;
-    height: 50%;
     border-color:1px #2B2A2A;
 }
 
@@ -114,7 +136,7 @@ li, a{
     color:black;
     font-family: 'Jost', sans-serif;
     font-size: 1vw;
-    padding: 85px 30px;
+    text-align: center;
 }
 img {
     width: 5vw;

@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    transition: all 0.15s;
+}
+body{
+    background-color: #2B2A2A;
+    background-image: url(male-musician-playing-acoustic-guitar-in-a-dark-room-copy-space.jpg);
+    border-radius: 30px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-cima{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0vw;
+    background-color:#2B2A2A;
+    width: 100%;
+}
+.logo{
+    width: 5vw;
+    height: 4vw;
+    margin-right: 1%;
+    padding: 0;
+}
+.search-box{
+    background: #F5F5F5;
+    width: 15vw;
+    height: 1.7vw;
+    border-radius: 1vw;
+}
+.search-text{
+    background: none;
+    border: none;
+    float: left;
+    color:#00BD71;
+    width: 15vw;
+    height: 1.7vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+}
+
+
+.icone-header1{
+    width: 1.5vw;
+    height: 1.5vw;
+    padding: 0 0.5vw;
+}
+
+/*estrutura de baixoo*/
+
+.header-baixo{
+    position: fixed;
+    background-color: #00BD71;
+    color:#2B2A2A;
+    font-family: 'Jost', sans-serif;
+    font-size: 1vw;
+    gap: 1vw;
+    padding: 15px 30px;
+    width: 100%;
+    margin-top: 4vw;
+}
+.navegation {
+    gap: 2vw;
+    list-style: none;
+    display: inline-flex;
+}
+
+li, a{
+    margin-left: 30%;
+}

@@ -20,13 +20,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0vw;
+    padding: 0.2vw;
     background-color:#2B2A2A;
     width: 100%;
 }
 .logo{
-    width: 5vw;
-    height: 4vw;
+    width: 8vw;
+    height: 3.9vw;
     margin-right: 1%;
     padding: 0;
 }
@@ -93,10 +93,12 @@ li, a{
     justify-content: center;
     border-radius: 50px;
     margin-left: 20rem;
+    margin-top: 10%;
 }
 
+
 .titulozinho{
-    margin-top: 300px;
+    margin-top: 20px;
     color: #00BD71;
     font-family: 'Jost', sans-serif;
     font-size: 2vw;
@@ -115,8 +117,22 @@ hr{
 .produtos{
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 20px;
     padding: 10px;
+}
+.produtos2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.titulozinho2{
+    margin-top: 20px;
+    color: #00BD71;
+    font-family: 'Jost', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    padding: 20px 0px 0px;
 }
 
 .produto{
@@ -148,4 +164,24 @@ img {
     font-family: 'Jost' ;
     font-size: 1vw;
     padding: 0px 30px 20px;
+}
+
+footer{
+    height: 10%;
+    width: 100%;
+    background-color:#00BD71;
+    color:#2B2A2A;
+    font-family: 'Jost' ;
+    font-size: 1vw;
+    margin-top: 1vw;
+    padding: 30px 30px 20px;
+    text-align:center;
+}
+
+.iconizin{
+    margin-top: 2%;
+    padding: 2px 30px;
+    margin-left: 3vw;
+    width:3vw;
+    height:3vw;
 }

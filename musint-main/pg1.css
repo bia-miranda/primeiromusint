@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    transition: all 0.15s;
+}
+
+body{
+    background-color: #2B2A2A;
+    background-image: url(imagens/male-musician-playing-acoustic-guitar-in-a-dark-room-copy-space.jpg);
+    border-radius: 30px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header-cima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    background-color: #222;
+    width: 100%;
+    z-index: 2;
+    height: 10%;
+}
+.logo{
+    margin-top: 4px;
+    width: 13%;
+    height: 11%;
+    margin-left: -39%;
+    z-index: 3;
+   }
+.search-box{
+    margin-top: 3px;
+    background: #F5F5F5;
+    width: 50%;
+    border-radius: 1vw;
+    
+}
+.search-text{
+    border: none;
+    background: none;
+    float: left;
+    color: #00BD71;
+    width: 90%;
+    height: 55px;
+    border-radius: 1vw;
+    font-size: 19px;
+}
+
+
+.lupa {
+    width: 4%;
+    float: right;
+    padding: 13px;
+}
+
+
+
+.icone-header1 {
+    width: 2%;
+    height: 4%;
+    padding: 0.5vw;
+    z-index: 1;
+    margin-left: 29%;   
+}
+.icone-header2{
+    width: 2%;
+    height: 4%;
+    padding: 0.5vw;
+    z-index: 1;
+    margin-left: 42%;
+}
+.icone-header3{
+    width: 2%;
+    height: 4%;
+    padding: 0.5vw;
+    margin-left: 35%;
+    z-index: 1;
+}
+
+.header-baixo, .header-cima, .logo, .icone-header1, .icone-header2, .icone-header3 {
+    position: fixed;
+}
+/*   Estilização imagens de rede sociais  */
+.insta{
+    width: 2%;
+    cursor: pointer;
+    width: 2%;
+    cursor: pointer;
+    padding-right: 22px;
+
+}
+.face{
+    width: 2%;
+    cursor: pointer;
+    padding-right: 22px;;
+
+}
+.whats {
+    width: 2%;
+    cursor: pointer;
+    width: 2%;
+    cursor: pointer;
+    padding-right: 22px;
+}
+
+.icone-header1{
+    width: 2%;
+    cursor: pointer;
+    width: 2%;
+    cursor: pointer;
+    padding-left: 22px;
+}
+
+
+hr {         /* estilização da linha de divisão de itens */
+    width: 100%;
+    height: 3px;
+}
+
+                     /* CORPO DA PAGINA */
+           
+.guitarra img {
+    width: 53%;
+    float: left;
+}
+.guitarra .instrumento {
+    display: flex;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 150%; ;
+}
+.guitarra .marca {
+    width: 60%;
+    color: #00BD71;
+    font-size: 120%;
+    font-family: 'Jost', sans-serif;
+}
+.guitarra .nome {
+    color: black;
+    float: left;
+    font-size: 150%;
+    font-family: 'Jost', sans-serif;
+}
+.guitarra .cinza-claro {
+    color: gray;
+    width: 94%;
+    font-family: 'Jost', sans-serif;
+}
+.guitarra .preto {
+    color: black;
+    float: left;
+    padding-right: 30px;
+    font-family: 'Jost', sans-serif;
+}
+.guitarra .valor-destaque {
+    color: #00BD71;
+    width: 13%;
+    float: left;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+.guitarra .button-comprar {
+    width: 20%;
+    margin-right: 5%;
+    padding: 3%;
+    background-color: #00BD71;
+    float: right;
+    border-radius: 2vw;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+}
+.guitarra .button-cep {
+
+    padding: 5px;
+    border: 1px solid #00BD71;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
+    display: block;
+    border-radius: 2vw;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+}
+.guitarra input {
+    border-radius: 2vw;
+    float: left;
+    display: flex;
+    align-content: flex-start;
+    width: 15%;
+    padding: 5px;
+    border: 1px solid #00BD71;
+    font-family: 'Jost', sans-serif;
+}
+.guitarra .quantidade {
+    border: 1px solid #00BD71;
+    cursor:pointer;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+                            /* rodapé da pagina */
+footer{
+    display: flex;
+    padding: 4vw;
+    width: 100%;
+    background-color: #00BD71;
+    color: #2B2A2A;
+    font-family: 'Jost';
+    padding: 30px 0px 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+.mapa{
+    border: none;
+    border-radius: 25px;
+     width:300px;
+     height:200px;
+     margin-left: 70px;
+     cursor:pointer;
+ }
+ 
+ .iconizin{
+     margin-top: 2%;
+     padding: 2px 30px;
+     margin-left: 3vw;
+     width:3vw;
+     height:3vw;
+     cursor:pointer;
+ }
+ 
+ .direitos p{
+     background-color:#01a463;
+     font-size: 16px;
+     padding: 20px 0px 20px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .forma-pagamento {
+    width: 31%;
+ }
+ 
+ hr {
+    width: 80%;
+    height: 3px;
+    border: none;
+    border-radius: 90%;
+    background-color:#00BD71;
+    margin-left: 5.7vw;
+}
+
+
+#info {
+margin-left: 15%;
+}

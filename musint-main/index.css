@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-*{
+    
   
+
+
+
+
+
+
+
+*{
     margin:0;
     padding: 0;
     transition: all 0.15s;
@@ -15,6 +23,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/* MENU SUPERIOR */
 .header-cima{
     display: flex;
     justify-content: center;
@@ -25,19 +35,24 @@ body{
     z-index: 2;
     height: 10%;
 }
+
+/* LOGO DA PAGINA */
 .logo{
     margin-top: 4px;
     width: 13%;
-    height: 11%;
+    height: 9%;
     margin-left: -39%;
     z-index: 3;
    }
+
+
+   /* ÁREA DE PESQUINA  */
 .search-box{
     margin-top: 3px;
     background: #F5F5F5;
     width: 50%;
-    border-radius: 1vw;
-    
+    border-radius: 1vw; 
+    border-style: none;
 }
 .search-text{
     border: none;
@@ -48,23 +63,25 @@ body{
     height: 55px;
     border-radius: 1vw;
     font-size: 19px;
+    border-style: none;
 }
-
-
 .lupa {
     width: 4%;
     float: right;
     padding: 13px;
+    cursor: pointer;
 }
 
 
 
+/* INCONE INICIO DA PAGINA */
 .icone-header1 {
     width: 2%;
     height: 4%;
     padding: 0.5vw;
     z-index: 1;
     margin-left: 29%;   
+    cursor: pointer
 }
 .icone-header2{
     width: 2%;
@@ -72,6 +89,7 @@ body{
     padding: 0.5vw;
     z-index: 1;
     margin-left: 42%;
+    cursor: pointer
 }
 .icone-header3{
     width: 2%;
@@ -79,35 +97,82 @@ body{
     padding: 0.5vw;
     margin-left: 35%;
     z-index: 1;
+    cursor: pointer
 }
 
+
+
+/*  ÁREA PARA ACRECENTAR AO Z INDEX INICIO DA PAGINA*/
 .header-baixo, .header-cima, .logo, .icone-header1, .icone-header2, .icone-header3 {
     position: fixed;
 }
-/*estrutura de baixoo*/
+
+
+
+/*ESTRUTURA DO MENU DE NAVEGAÇÃO */
 
 .header-baixo{
-    background-color: #00BD71;
+    background: linear-gradient(to bottom, rgb(0,90,30),rgb(89,225,143),rgb(0,90,30));
     color: #2B2A2A;
     font-family: 'Jost', sans-serif;
-    font-size: 1vw;
+    font-size: 1.3vw;
     padding: 15px 30px;
     width: 100%;
     margin-top: 6%;
     z-index: 1;
 }
-
-
 .navegation {
-    gap: 0.3vw;
     list-style: none;
     display: inline-flex;
     margin-left: 15%;
 }
 
-li, a{
-    margin-left: 30%;
+
+
+/* LISTA MENU */
+li a{
+    text-decoration: none;
+    color:#2B2A2A;
+    padding: 0.50vw;
+    margin-left: 6vw;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer
 }
+
+
+
+
+/* transção a baixo das letras do menu */
+a:hover{
+transition: 0.10s;
+color: #2B2A2A;
+cursor: pointer;
+}
+
+a::after{
+    background: none repeat scroll 0 0 transparent;
+    content: '';
+    width: 0%;
+    height: 5%;
+    background-color:#2B2A2A;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    transition: 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+a:hover::after{
+    transform: scalex(1);
+    width: 100%;
+}
+/* transção a baixo das letras do menu */
+
+
+
+
+
+
 .lema{
     font-family: 'Jost', sans-serif;
     color: #00BD71;
@@ -117,7 +182,8 @@ li, a{
 
 
 
-/*MAIN E PRODUTOS*/
+
+/*CORPO DA PAGINA PRODUTOS*/
 
 .principal{
     background-color: white;
@@ -145,6 +211,8 @@ li, a{
     text-align: center;
     padding: 20px 0px 0px;
 }
+
+/* LINHA DE DIVISÃO DA PAGINA */
 hr{
     width: 80%;
     height: 3px;
@@ -160,12 +228,14 @@ hr{
     justify-content: center;
     margin-top: 20px;
     padding: 10px;
+    cursor: pointer
 }
 .produtos2{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     padding: 10px;
+    cursor: pointer
 }
 .titulozinho2{
     margin-top: 20px;
@@ -181,12 +251,14 @@ hr{
     border-radius: 50px;
     width: 20%;
     border-color:1px #2B2A2A;
+    cursor: pointer
 }
 
 .produto img{
     width: 7vw;
     margin-left: 43px;
     margin-top: 10px;
+    
 }
 
  p{
@@ -242,6 +314,8 @@ footer{
     text-align:center;
 }
 
+
+/* ÁREA INFERIOR DA PAGINA */
 .mapa{
    border: none;
    border-radius: 25px;
@@ -256,10 +330,73 @@ footer{
     margin-left: 3vw;
     width:3vw;
     height:3vw;
+    cursor: pointer
 }
 
 .direitos p{
     background-color:#01a463;
     font-size: 16px;
-    padding: 20px 0px 20px;
+    padding: 40px 0px 30px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+        .search-box {
+            height: 38px;
+          }
+          .lema {
+            padding: 160px 28px 46px;
+            font-size: 18px;
+          }
+          .search-text {
+          width: 80%;
+          height: 37px;
+        }
+        .lupa {
+            width: 9%;
+            padding: 6px;  
+        }
+        .logo {
+            width: 23%;
+        }
+        .icone-header1 {
+            width: 4%;
+        }
+        .icone-header2 {
+            width: 5%;
+            margin-left: 45%;
+        }
+        .icone-header3{
+        width: 5%;
+        margin-left: 37%;
+        }
+        .header-baixo {
+            background: linear-gradient(to bottom, rgb(235, 2, 184),rgb(117, 38, 182),rgb(62, 138, 131));
+            color: #2B2A2A;
+            font-family: 'Jost', sans-serif;
+            font-size: 2.3vw;
+            padding: 19px 31px;
+            width: 100%;
+            margin-top: 16%;
+        }
+        .produto img {
+            margin-left: 3px;
+        }
+        .produto img {
+            height: 48px;
+        }
+        .mapa {
+            margin-left: 50px;
+        }
+        footer {
+            font-size: 2vw;
+        }
+        p{
+            font-size: 2vw;
+        }
+
+        .produtos2{
+            display: none;
+        }
 }
